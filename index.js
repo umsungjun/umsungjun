@@ -21,7 +21,7 @@ const parser = new Parser({
 });
 
 (async () => {
-  // 피드 목록
+  // 피드 목록 가져오기
   const feed = await parser.parseURL(
     "https://developer-sungjun.tistory.com/rss"
   );
