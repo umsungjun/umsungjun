@@ -5,12 +5,8 @@ import Parser from "rss-parser";
  * README.MD
  */
 
-let text = `# Hi there 👋
-
-## 이런 환경에 익숙해요✍🏼
-
-## 📕 Latest Blog Posts
-
+let text = `
+### 최근 포스팅
 `;
 
 // rss-parser 생성
@@ -29,7 +25,7 @@ const parser = new Parser({
   // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
   for (let i = 0; i < 5; i++) {
     const { title, link } = feed.items[i];
-    text += `<a href=${link}>${title}</a></br>`;
+    text += `- <a href=${link}>${title}</a></br>`;
   }
 
   // README.md 파일 작성
