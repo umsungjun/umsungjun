@@ -22,11 +22,15 @@ const parser = new Parser({
     "https://developer-sungjun.tistory.com/rss"
   );
 
+  text += "<ul>";
+
   // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
   for (let i = 0; i < 5; i++) {
     const { title, link } = feed.items[i];
-    text += `- <a href=${link}>${title}</a></br>`;
+    text += `<li><a href=${link}>${title}</a></li>`;
   }
+
+  text += "</ul>";
 
   // README.md 파일 작성
   writeFileSync("README.md", text, "utf8", (e) => {
