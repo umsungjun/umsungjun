@@ -6,7 +6,25 @@ import Parser from "rss-parser";
  */
 
 let text = `
-### 최근 포스팅
+### 소개
+
+"인내와 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
+
+\`\`\`javascript
+const umsungjun = {
+  code: ["HTML", "CSS", "JavaScript", "TypeScript"],
+  framework: ["ReactJs", "NextJs", "ReactNative"],
+  styling: ["CSS3", "Styled-Component", "Tailwind CSS"],
+  stateManagement: ["TanStack-Query(React-Query)"],
+  globalStateManagement: ["Zustand", "Redux Toolkit"],
+  packageManager: ["npm", "Yarn", "pnpm"],
+  collaboration: ["Slack", "Figma", "Github", "JIRA", "Bitbucket"],
+
+  challenge:
+    "NextJs와 ReactNative에 모두 관심이 있지만, 현재는 NextJs를 우선적으로 깊이 학습하고 있습니다.",
+};
+\`\`\`
+
 `;
 
 // rss-parser 생성
