@@ -6,7 +6,7 @@ import Parser from "rss-parser";
  */
 
 let text = `
-### 소개
+### About Me
 
 "인내와 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
 
@@ -25,6 +25,7 @@ const umsungjun = {
 };
 \`\`\`
 
+### Latest Posts
 `;
 
 // rss-parser 생성
