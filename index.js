@@ -6,6 +6,8 @@ import Parser from "rss-parser";
  */
 
 let text = `
+<img src="https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif" width="100%">
+
 ### About Me
 
 "인내와 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
