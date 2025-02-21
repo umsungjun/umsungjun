@@ -1,5 +1,5 @@
-import { writeFileSync } from 'node:fs';
-import Parser from 'rss-parser';
+import { writeFileSync } from "node:fs";
+import Parser from "rss-parser";
 
 /**
  * README.MD
@@ -8,7 +8,7 @@ import Parser from 'rss-parser';
  */
 
 let text = `
-<img src="https://i.pinimg.com/originals/2f/76/2b/2f762b4a98dd4ba80c068484d37b5e00.gif" width="100%">
+<img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tzdzEyZDQyZWwwMGxxNzd1ajl0YWFxMXNoMW9jaTgyZGNwOWZxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TElVR7Kr6J4kRobiBY/giphy.gif" width="100%">
 
 ### About Me
 
@@ -35,17 +35,17 @@ const umsungjun = {
 // rss-parser 생성
 const parser = new Parser({
   headers: {
-    Accept: 'application/rss+xml, application/xml, text/xml; q=0.1',
+    Accept: "application/rss+xml, application/xml, text/xml; q=0.1",
   },
 });
 
 (async () => {
   // 피드 목록 가져오기
   const feed = await parser.parseURL(
-    'https://developer-sungjun.tistory.com/rss'
+    "https://developer-sungjun.tistory.com/rss"
   );
 
-  text += '<ul>';
+  text += "<ul>";
 
   // 최신 5개의 글의 제목과 링크를 가져온 후 text에 추가
   for (let i = 0; i < 5; i++) {
@@ -53,12 +53,12 @@ const parser = new Parser({
     text += `<li><a href=${link}>${title}</a></li>`;
   }
 
-  text += '</ul>';
+  text += "</ul>";
 
   // README.md 파일 작성
-  writeFileSync('README.md', text, 'utf8', (e) => {
+  writeFileSync("README.md", text, "utf8", (e) => {
     console.log(e);
   });
 
-  console.log('업데이트 완료');
+  console.log("업데이트 완료");
 })();
