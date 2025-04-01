@@ -1,7 +1,7 @@
 
 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tzdzEyZDQyZWwwMGxxNzd1ajl0YWFxMXNoMW9jaTgyZGNwOWZxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TElVR7Kr6J4kRobiBY/giphy.gif" width="100%">
 
-### About Me
+## About Me
 
 "꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
 
@@ -20,5 +20,12 @@ const umsungjun = {
 };
 ```
 
-### Latest Posts
+## 🔥 Open Source Contribution
+<ul>
+  <li>
+    <a href="https://github.com/luciancah/nextjs-ko/pull/158/commits/fa2c5485e361c112470b30769858bb6a42f951e0">Nextjs 한글 문서</a> - ExternalImage 컴포넌트의 <code>baseUrl</code>을 변경하여 이미지 출력 문제를 해결했습니다.
+  </li>
+</ul>
+
+## 📝 Latest Posts
 <ul><li><a href=https://developer-sungjun.tistory.com/entry/es-toolkit%EC%9D%98-throttle%EB%A1%9C-%EC%84%B1%EB%8A%A5-%EC%B5%9C%EC%A0%81%ED%99%94%ED%95%9C-Scroll-To-Top-%EB%B2%84%ED%8A%BC-%EA%B5%AC%ED%98%84>es-toolkit의 throttle로 성능 최적화한 Scroll To Top 버튼 구현</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Tanstack-Query%EC%99%80-Optimistic-Update%EB%A1%9C-Autowini-%EC%A2%8B%EC%95%84%EC%9A%94-%EA%B8%B0%EB%8A%A5-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0>Tanstack Query와 Optimistic Update로 Autowini 좋아요 기능 구현하기</a></li><li><a href=https://developer-sungjun.tistory.com/entry/React-Conext-%ED%86%BA%EC%95%84%EB%B3%B4%EA%B8%B0>React Conext  톺아보기</a></li><li><a href=https://developer-sungjun.tistory.com/entry/%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A0%80-%EC%96%B8%EC%96%B4%EC%99%80-%ED%81%AC%EB%A1%9C%EC%8A%A4-%EB%B8%8C%EB%9D%BC%EC%9A%B0%EC%A7%95>브라우저 언어와 크로스 브라우징</a></li><li><a href=https://developer-sungjun.tistory.com/entry/S3%EC%99%80-CloudFront%EB%A1%9C-%EC%A0%95%EC%A0%81-%EC%82%AC%EC%9D%B4%ED%8A%B8-%ED%98%B8%EC%8A%A4%ED%8C%85-React-%EC%95%B1-%EB%B0%B0%ED%8F%AC-%EA%B2%BD%ED%97%98>S3와 CloudFront로 정적 사이트 호스팅: React 앱 배포 경험</a></li></ul>
