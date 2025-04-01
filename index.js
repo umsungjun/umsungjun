@@ -10,7 +10,7 @@ import Parser from "rss-parser";
 let text = `
 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tzdzEyZDQyZWwwMGxxNzd1ajl0YWFxMXNoMW9jaTgyZGNwOWZxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TElVR7Kr6J4kRobiBY/giphy.gif" width="100%">
 
-### About Me
+## About Me
 
 "꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
 
@@ -29,7 +29,14 @@ const umsungjun = {
 };
 \`\`\`
 
-### Latest Posts
+## 🔥 Open Source Contribution
+<ul>
+  <li>
+    <a href="https://github.com/luciancah/nextjs-ko/pull/158/commits/fa2c5485e361c112470b30769858bb6a42f951e0">Nextjs 한글 문서</a> - ExternalImage 컴포넌트의 <code>baseUrl</code>을 변경하여 이미지 출력 문제를 해결했습니다.
+  </li>
+</ul>
+
+## 📝 Latest Posts
 `;
 
 // rss-parser 생성
