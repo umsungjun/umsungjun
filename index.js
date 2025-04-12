@@ -10,9 +10,9 @@ import Parser from "rss-parser";
 let text = `
 <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tzdzEyZDQyZWwwMGxxNzd1ajl0YWFxMXNoMW9jaTgyZGNwOWZxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TElVR7Kr6J4kRobiBY/giphy.gif" width="100%">
 
-## About Me
+## 👋 About Me
 
-"꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다."
+### 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
 \`\`\`javascript
 const umsungjun = {
