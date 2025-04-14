@@ -27,7 +27,7 @@ const umsungjun = {
     🛠️ <a href="https://github.com/toss/es-toolkit/pull/1125">es-toolkit (PR #1125)</a> - 많은 파일에서 문자열 타입 체크 시 <code>typeof value === 'string'</code>을 <code>isString()</code> 유틸리티 함수로 변경하여 코드의 가독성과 일관성을 향상시켰습니다.
   </li>
   <li>
-    🛠️ <a href="https://github.com/toss/frontend-fundamentals/pull/207">Frontend Fundamentals (PR #207)</a> - 이미지 기반 예시 코드를 복사 가능한 코드 블록으로 변경하고, 문서 흐름에 맞춰 설명 문구를 간결하고 쉽게 이해할 수 있도록 수정했습니다.
+    ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">Frontend Fundamentals (PR #207)</a> - 이미지 기반 예시 코드를 복사 가능한 코드 블록으로 변경하고, 문서 흐름에 맞춰 설명 문구를 간결하고 쉽게 이해할 수 있도록 수정했습니다.
   </li>
   <li>
     ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/211">Frontend Fundamentals (PR #211)</a> - GitHub에서 이미지가 렌더링되지 않는 문제를 해결하기 위해 이미지 경로를 <code>./images/ff-meta.png</code>로 수정했습니다.
