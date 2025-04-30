@@ -18,16 +18,6 @@ const umsungjun = {
 };
 ```
 
-/*
-  # Closed
-  <li>
-    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1125">es-toolkit (PR #1125)</a> - 문자열 타입 체크를 <code>typeof value === 'string'</code>에서 <code>isString()</code> 유틸 함수로 통일하여 코드의 가독성과 일관성을 향상시킴.
-  </li>
-    <li>
-    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1136">es-toolkit (PR #1136)</a> - <code>maxBy</code>와 <code>minBy</code> 함수에서 인자로 전달된 배열이 비어 있을 경우 <code>undefined</code>를 미리 반환하도록 처리하여 잘못된 값 반환 방지, 반환 타입도 이에 맞춰 수정.
-  </li>
-*/
-
 ## 🔥 Open Source Contribution
 <ul style="line-height: 2;">
   <li>
