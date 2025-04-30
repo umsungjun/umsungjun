@@ -1,13 +1,6 @@
 import { writeFileSync } from "node:fs";
 import Parser from "rss-parser";
 
-/**
- * README.MD
- * 슈퍼마리오 이미지
- * https://user-images.githubusercontent.com/74038190/225813708-98b745f2-7d22-48cf-9150-083f1b00d6c9.gif
- * <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2tzdzEyZDQyZWwwMGxxNzd1ajl0YWFxMXNoMW9jaTgyZGNwOWZxYiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/TElVR7Kr6J4kRobiBY/giphy.gif" width="100%">
- */
-
 let text = `
 ## 👋 About Me
 
@@ -28,13 +21,20 @@ const umsungjun = {
 };
 \`\`\`
 
+/*
+  # Closed
+  <li>
+    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1125">es-toolkit (PR #1125)</a> - 문자열 타입 체크를 <code>typeof value === 'string'</code>에서 <code>isString()</code> 유틸 함수로 통일하여 코드의 가독성과 일관성을 향상시킴.
+  </li>
+    <li>
+    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1136">es-toolkit (PR #1136)</a> - <code>maxBy</code>와 <code>minBy</code> 함수에서 인자로 전달된 배열이 비어 있을 경우 <code>undefined</code>를 미리 반환하도록 처리하여 잘못된 값 반환 방지, 반환 타입도 이에 맞춰 수정.
+  </li>
+*/
+
 ## 🔥 Open Source Contribution
 <ul style="line-height: 2;">
   <li>
   ✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - 전역적으로 사용하는 <code>ExternalImage</code> 컴포넌트의 <code>baseUrl</code>을 수정하여 이미지 출력 문제 해결.
-  </li>
-  <li>
-    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1125">es-toolkit (PR #1125)</a> - 문자열 타입 체크를 <code>typeof value === 'string'</code>에서 <code>isString()</code> 유틸 함수로 통일하여 코드의 가독성과 일관성을 향상시킴.
   </li>
   <li>
     ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">Frontend Fundamentals (PR #207)</a> - 이미지 기반 예시 코드를 복사 가능한 코드 블록으로 변경하고, 문서 흐름에 맞게 설명 문구를 간결하고 쉽게 이해할 수 있도록 수정.
@@ -43,7 +43,7 @@ const umsungjun = {
     ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/211">Frontend Fundamentals (PR #211)</a> - GitHub에서 이미지가 렌더링되지 않는 문제를 해결하기 위해 이미지 경로를 <code>./images/ff-meta.png</code>로 수정하여 이미지 표시 문제 해결.
   </li>
   <li>
-    🛠️ <a href="https://github.com/toss/es-toolkit/pull/1136">es-toolkit (PR #1136)</a> - <code>maxBy</code>와 <code>minBy</code> 함수에서 인자로 전달된 배열이 비어 있을 경우 <code>undefined</code>를 미리 반환하도록 처리하여 잘못된 값 반환 방지, 반환 타입도 이에 맞춰 수정.
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/250">NaverPayDev/hidash (PR #250)</a> - README 파일에서 CI 배지 URL을 업데이트하여 올바른 경로로 배지가 표시되도록 수정.
   </li>
 </ul>
 
