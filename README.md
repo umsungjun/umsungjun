@@ -32,6 +32,12 @@ const umsungjun = {
   <li>
     ✅ <a href="https://github.com/NaverPayDev/hidash/pull/250">NaverPayDev/hidash (PR #250)</a> - README 파일에서 CI 배지 URL을 업데이트하여 올바른 경로로 배지가 표시되도록 수정.
   </li>
+   <li>
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/252">NaverPayDev/hidash (PR #252)</a> - <code>isArray</code> 함수에 대한 단위 테스트(<code>isArray.test.ts</code>)와 벤치마크 테스트(<code>isArray.bench.ts</code>)를 추가.
+  </li>
+  <li>
+    ✅ <a href="https://github.com/toss/es-toolkit/pull/1159">es-toolkit (PR #1159)</a> - <code>ary</code> 함수에 대한 누락된 벤치마크 파일(<code>ary.bench.ts</code>)을 추가
+  </li>
 </ul>
 
 ## 📝 Latest Posts
