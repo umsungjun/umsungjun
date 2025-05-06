@@ -41,6 +41,12 @@ const umsungjun = {
   <li>
     ✅ <a href="https://github.com/toss/es-toolkit/pull/1159">es-toolkit (PR #1159)</a> - <code>ary</code> 함수에 대한 누락된 벤치마크 파일(<code>ary.bench.ts</code>)을 추가
   </li>
+  <li>
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/253">NaverPayDev/hidash (PR #253)</a> - <code>isFunction</code> 함수에 대한 벤치마크 테스트(<code>isFunction.bench.ts</code>) 추가.
+  </li>
+  <li>
+    🛠 <a href="https://github.com/NaverPayDev/hidash/pull/254">NaverPayDev/hidash (PR #254)</a> - <code>before</code> 함수에 대한 벤치마크 테스트(<code>before.bench.ts</code>) 추가.
+  </li>
 </ul>
 
 ## 📝 Latest Posts
