@@ -42,7 +42,10 @@ const umsungjun = {
     ✅ <a href="https://github.com/NaverPayDev/hidash/pull/253">NaverPayDev/hidash (PR #253)</a> - <code>isFunction</code> 함수에 대한 벤치마크 테스트(<code>isFunction.bench.ts</code>) 추가.
   </li>
   <li>
-    🛠 <a href="https://github.com/NaverPayDev/hidash/pull/254">NaverPayDev/hidash (PR #254)</a> - <code>before</code> 함수에 대한 벤치마크 테스트(<code>before.bench.ts</code>) 추가.
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/254">NaverPayDev/hidash (PR #254)</a> - <code>before</code> 함수에 대한 벤치마크 테스트(<code>before.bench.ts</code>) 추가.
+  </li>
+  <li>
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/262">NaverPayDev/hidash (PR #262)</a> - <code>first</code> 함수에 대한 벤치마크 테스트(<code>first.bench.ts</code>) 추가.
   </li>
 </ul>
 
