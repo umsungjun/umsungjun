@@ -47,6 +47,9 @@ const umsungjun = {
   <li>
     ✅ <a href="https://github.com/NaverPayDev/hidash/pull/262">NaverPayDev/hidash (PR #262)</a> - <code>first</code> 함수에 대한 벤치마크 테스트(<code>first.bench.ts</code>) 추가.
   </li>
+   <li>
+    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/265">NaverPayDev/hidash (PR #265)</a> - <code>last</code> 함수에 대한 벤치마크 테스트(<code>last.bench.ts</code>) 추가.
+  </li>
 </ul>
 
 ## 📝 Latest Posts
