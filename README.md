@@ -20,36 +20,18 @@ const umsungjun = {
 
 ## 🔥 Open Source Contribution
 <ul style="line-height: 2;">
-  <li>
-  ✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - 전역적으로 사용하는 <code>ExternalImage</code> 컴포넌트의 <code>baseUrl</code>을 수정하여 이미지 출력 문제 해결.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">Frontend Fundamentals (PR #207)</a> - 이미지 기반 예시 코드를 복사 가능한 코드 블록으로 변경하고, 문서 흐름에 맞게 설명 문구를 간결하고 쉽게 이해할 수 있도록 수정.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/toss/frontend-fundamentals/pull/211">Frontend Fundamentals (PR #211)</a> - GitHub에서 이미지가 렌더링되지 않는 문제를 해결하기 위해 이미지 경로를 <code>./images/ff-meta.png</code>로 수정하여 이미지 표시 문제 해결.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/250">NaverPayDev/hidash (PR #250)</a> - README 파일에서 CI 배지 URL을 업데이트하여 올바른 경로로 배지가 표시되도록 수정.
-  </li>
-   <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/252">NaverPayDev/hidash (PR #252)</a> - <code>isArray</code> 함수에 대한 단위 테스트(<code>isArray.test.ts</code>)와 벤치마크 테스트(<code>isArray.bench.ts</code>)를 추가.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/toss/es-toolkit/pull/1159">es-toolkit (PR #1159)</a> - <code>ary</code> 함수에 대한 누락된 벤치마크 파일(<code>ary.bench.ts</code>)을 추가
-  </li>
-  <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/253">NaverPayDev/hidash (PR #253)</a> - <code>isFunction</code> 함수에 대한 벤치마크 테스트(<code>isFunction.bench.ts</code>) 추가.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/254">NaverPayDev/hidash (PR #254)</a> - <code>before</code> 함수에 대한 벤치마크 테스트(<code>before.bench.ts</code>) 추가.
-  </li>
-  <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/262">NaverPayDev/hidash (PR #262)</a> - <code>first</code> 함수에 대한 벤치마크 테스트(<code>first.bench.ts</code>) 추가.
-  </li>
-   <li>
-    ✅ <a href="https://github.com/NaverPayDev/hidash/pull/265">NaverPayDev/hidash (PR #265)</a> - <code>last</code> 함수에 대한 벤치마크 테스트(<code>last.bench.ts</code>) 추가.
-  </li>
+<li>✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - <code>ExternalImage</code>의 <code>baseUrl</code> 수정으로 이미지 출력 문제 해결</li>
+  <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">Frontend Fundamentals (PR #207)</a> - 이미지 예시를 코드 블록으로 변경, 설명 문구 개선</li>
+  <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/211">Frontend Fundamentals (PR #211)</a> - 이미지 경로 수정으로 렌더링 문제 해결</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/250">hidash (PR #250)</a> - README의 CI 배지 URL 수정</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/252">hidash (PR #252)</a> - <code>isArray</code> 함수 테스트 및 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1159">es-toolkit (PR #1159)</a> - <code>ary</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/253">hidash (PR #253)</a> - <code>isFunction</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/254">hidash (PR #254)</a> - <code>before</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/262">hidash (PR #262)</a> - <code>first</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/265">hidash (PR #265)</a> - <code>isMap</code> 함수 테스트 및 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/268">hidash (PR #268)</a> - <code>last</code> 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/hamsurang/react-ko-form/pull/100">React Hook Form 한글 문서 (PR #100)</a> - 중복된 <code>&lt;Component {...pageProps} /&gt;</code> 제거로 중복 렌더링 문제 해결</li>
 </ul>
 
 ## 📝 Latest Posts
