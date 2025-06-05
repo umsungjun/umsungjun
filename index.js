@@ -14,10 +14,7 @@ const umsungjun = {
   stateManagement: ["TanStack-Query(React-Query)"],
   globalStateManagement: ["Zustand", "Redux Toolkit"],
   packageManager: ["npm", "Yarn", "pnpm"],
-  collaboration: ["Slack", "Figma", "Github", "JIRA", "Bitbucket"],
-
-  challenge:
-    "NextJs와 ReactNative에 모두 관심이 있지만, 현재는 NextJs를 우선적으로 깊이 학습하고 있습니다.",
+  collaboration: ["Slack", "Figma", "Github", "JIRA", "Bitbucket"]
 };
 \`\`\`
 
@@ -33,10 +30,12 @@ const umsungjun = {
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/254">NaverPayDev/hidash (PR #254)</a> - <code>before</code> 함수 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/262">NaverPayDev/hidash (PR #262)</a> - <code>first</code> 함수 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/265">NaverPayDev/hidash (PR #265)</a> - <code>isMap</code> 함수 테스트 및 벤치마크 추가</li>
-  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/268">NaverPayDev/hidash (PR #268)</a> - <code>last</code> 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/268">NaverPayDev/hidash (PR #268)</a> - <code>last</code> 함수 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/hamsurang/react-ko-form/pull/100">React Hook Form 한글 문서 (PR #100)</a> - 중복된 <code>&lt;Component {...pageProps} /&gt;</code> 제거로 중복 렌더링 문제 해결</li>
-  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/270">NaverPayDev/hidash (PR #270)</a> - <code>isNumber</code> 벤치마크 추가</li>
-  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/271">NaverPayDev/hidash (PR #271)</a> - <code>reverse</code> 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/270">NaverPayDev/hidash (PR #270)</a> - <code>isNumber</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/271">NaverPayDev/hidash (PR #271)</a> - <code>reverse</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/272">NaverPayDev/hidash (PR #272)</a> - <code>once</code> 함수 JSDoc 및 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1197">toss/es-toolkit (PR #1197)</a> - <code>identity</code> 함수 벤치마크 추가</li>
 </ul>
 
 ## 📝 Latest Posts
