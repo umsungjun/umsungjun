@@ -19,7 +19,7 @@ const umsungjun = {
 \`\`\`
 
 ## 🔥 Open Source Contribution
-<ul style="line-height: 2;">
+<ul style="line-height: 2; max-height: 10rem; overflow-y: scroll;">
 <li>✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - <code>ExternalImage</code>의 <code>baseUrl</code> 수정으로 이미지 출력 문제 해결</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">toss/Frontend Fundamentals (PR #207)</a> - 이미지 예시를 코드 블록으로 변경, 설명 문구 개선</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/211">toss/Frontend Fundamentals (PR #211)</a> - 이미지 경로 수정으로 렌더링 문제 해결</li>
@@ -36,6 +36,8 @@ const umsungjun = {
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/271">NaverPayDev/hidash (PR #271)</a> - <code>reverse</code> 함수 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/272">NaverPayDev/hidash (PR #272)</a> - <code>once</code> 함수 JSDoc 및 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1197">toss/es-toolkit (PR #1197)</a> - <code>identity</code> 함수 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/277">NaverPayDev/hidash (PR #277)</a> - <code>isError</code> 함수 JSDoc 및 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/ssi02014/react-query-tutorial/pull/41">react-query-tutorial (PR #41)</a> - 문체 변경 및 <code>cacheTime</code> 초기화 내용 추가</li>
 </ul>
 
 ## 📝 Latest Posts
