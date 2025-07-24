@@ -35,7 +35,7 @@ const umsungjun = {
   <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1197">toss/es-toolkit (PR #1197)</a> - <code>identity</code> 함수 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/277">NaverPayDev/hidash (PR #277)</a> - <code>isError</code> 함수 JSDoc 및 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/ssi02014/react-query-tutorial/pull/41">react-query-tutorial (PR #41)</a> - 문체 변경 및 <code>cacheTime</code> 초기화 내용 추가</li>
-  <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1273"toss/es-toolkit (PR #1273)</a> - <code>take</code> 함수 JSDoc 및 벤치마크 추가</li>
+  <li>✅ <a href="https://github.com/toss/es-toolkit/pull/1273">toss/es-toolkit (PR #1273)</a> - <code>take</code> 함수 JSDoc 및 벤치마크 추가</li>
 </ul>
 
 ## 📝 Latest Posts
