@@ -42,6 +42,8 @@ const umsungjun = {
   <li>✅ <a href="https://github.com/daangn/stackflow/pull/603">daangn/stackflow (PR #603)</a> - <code>ActivityComponentType</code>에 <code>import type</code> 적용으로 런타임 에러 방지</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/283">NaverPayDev/hidash (PR #283)</a> - <code>isUndefined</code> 함수 테스트 및 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/380">toss/Frontend Fundamentals (PR #380)</a> - 이미지 파일 import 시 타입 에러 해결 방법 추가</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29417">mdn/translated-content (PR #29417)</a> - MDN의 Set 문서를 영어 원문과 동기화</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29482">mdn/translated-content (PR #29482)</a> - MDN의 ::first-letter 문서를 영어 원문과 동기화</li>
 </ul>
 
 ## 📝 Latest Posts
