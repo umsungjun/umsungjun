@@ -6,18 +6,6 @@ let text = `
 
 ### 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
-\`\`\`javascript
-const umsungjun = {
-  code: ["HTML", "CSS", "JavaScript", "TypeScript"],
-  framework: ["ReactJs", "NextJs", "ReactNative"],
-  styling: ["CSS3", "Styled-Component", "Tailwind CSS"],
-  stateManagement: ["TanStack-Query(React-Query)"],
-  globalStateManagement: ["Zustand", "Redux Toolkit"],
-  packageManager: ["npm", "Yarn", "pnpm"],
-  collaboration: ["Slack", "Figma", "Github", "JIRA", "Bitbucket"]
-};
-\`\`\`
-
 ## 🔥 Open Source Contribution
 <ul style="line-height: 2; max-height: 10rem; overflow-y: scroll;">
 <li>✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - <code>ExternalImage</code>의 <code>baseUrl</code> 수정으로 이미지 출력 문제 해결</li>
@@ -42,8 +30,17 @@ const umsungjun = {
   <li>✅ <a href="https://github.com/daangn/stackflow/pull/603">daangn/stackflow (PR #603)</a> - <code>ActivityComponentType</code>에 <code>import type</code> 적용으로 런타임 에러 방지</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/283">NaverPayDev/hidash (PR #283)</a> - <code>isUndefined</code> 함수 테스트 및 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/380">toss/Frontend Fundamentals (PR #380)</a> - 이미지 파일 import 시 타입 에러 해결 방법 추가</li>
-  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29417">mdn/translated-content (PR #29417)</a> - MDN의 Set 문서를 영어 원문과 동기화</li>
-  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29482">mdn/translated-content (PR #29482)</a> - MDN의 ::first-letter 문서를 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29197">mdn/translated-content (PR #29197)</a> - MDN Right shift (>>) 신규 번역</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29279">mdn/translated-content (PR #29279)</a> - MDN typeof 문서를 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29314">mdn/translated-content (PR #29314)</a> - MDN for...of 문서 영어 원문과 동기화</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29417">mdn/translated-content (PR #29417)</a> - MDN Set 문서를 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29429">mdn/translated-content (PR #29429)</a> - MDN matchmedia 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29457">mdn/translated-content (PR #29457)</a> - MDN Fetch API 영어 원문과 동기화</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29482">mdn/translated-content (PR #29482)</a> - MDN ::first-letter 문서를 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29737">mdn/translated-content (PR #29737)</a> - MDN Window: requestAnimationFrame() method 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29831">mdn/translated-content (PR #29831)</a> - MDN Document: DOMContentLoaded 이벤트 영어 원문과 동기화</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29895">mdn/translated-content (PR #29895)</a> - MDN Document: Response: Response() constructor 신규 번역</li>
+  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29925">mdn/translated-content (PR #29925)</a> - MDN Document: Response: headers property 신규 번역</li>
 </ul>
 
 ## 📝 Latest Posts
