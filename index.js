@@ -30,17 +30,17 @@ let text = `
   <li>✅ <a href="https://github.com/daangn/stackflow/pull/603">daangn/stackflow (PR #603)</a> - <code>ActivityComponentType</code>에 <code>import type</code> 적용으로 런타임 에러 방지</li>
   <li>✅ <a href="https://github.com/NaverPayDev/hidash/pull/283">NaverPayDev/hidash (PR #283)</a> - <code>isUndefined</code> 함수 테스트 및 벤치마크 추가</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/380">toss/Frontend Fundamentals (PR #380)</a> - 이미지 파일 <code>import</code> 시 타입 에러 해결 방법 추가</li>
-  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29197">mdn/translated-content (PR #29197)</a> - MDN <code>Right shift (>>)</code> 신규 번역</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29197">mdn/translated-content (PR #29197)</a> - MDN <code>Right shift (>>)</code> 신규 번역</li>
   <li>✅ <a href="https://github.com/mdn/translated-content/pull/29279">mdn/translated-content (PR #29279)</a> - MDN <code>typeof</code> 문서를 영어 원문과 동기화</li>
   <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29314">mdn/translated-content (PR #29314)</a> - MDN <code>for...of</code> 문서 영어 원문과 동기화</li>
   <li>✅ <a href="https://github.com/mdn/translated-content/pull/29417">mdn/translated-content (PR #29417)</a> - MDN <code>Set</code> 문서를 영어 원문과 동기화</li>
   <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29429">mdn/translated-content (PR #29429)</a> - MDN <code>matchmedia</code> 영어 원문과 동기화</li>
   <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29457">mdn/translated-content (PR #29457)</a> - MDN <code>Fetch API</code> 영어 원문과 동기화</li>
   <li>✅ <a href="https://github.com/mdn/translated-content/pull/29482">mdn/translated-content (PR #29482)</a> - MDN <code>::first-letter</code> 문서를 영어 원문과 동기화</li>
-  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29737">mdn/translated-content (PR #29737)</a> - MDN <code>Window: requestAnimationFrame() method</code> 영어 원문과 동기화</li>
-  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29831">mdn/translated-content (PR #29831)</a> - MDN <code>Document: DOMContentLoaded</code> 이벤트 영어 원문과 동기화</li>
-  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29895">mdn/translated-content (PR #29895)</a> - MDN <code>Document: Response: Response() constructor</code> 신규 번역</li>
-  <li>⛏️ <a href="https://github.com/mdn/translated-content/pull/29925">mdn/translated-content (PR #29925)</a> - MDN <code>Document: Response: headers property</code> 신규 번역</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29737">mdn/translated-content (PR #29737)</a> - MDN <code>Window: requestAnimationFrame() method</code> 영어 원문과 동기화</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29831">mdn/translated-content (PR #29831)</a> - MDN <code>Document: DOMContentLoaded</code> 이벤트 영어 원문과 동기화</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29895">mdn/translated-content (PR #29895)</a> - MDN <code>Document: Response: Response() constructor</code> 신규 번역</li>
+  <li>✅ <a href="https://github.com/mdn/translated-content/pull/29925">mdn/translated-content (PR #29925)</a> - MDN <code>Document: Response: headers property</code> 신규 번역</li>
 </ul>
 
 ## 📝 Latest Posts
