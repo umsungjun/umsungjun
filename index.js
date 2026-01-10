@@ -2,11 +2,16 @@ import { writeFileSync } from "node:fs";
 import Parser from "rss-parser";
 
 let text = `
-## 👋 About Me
+## 🔥 About Me
 
 ### 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
-## 🔥 Open Source Contribution
+## 📌 My Open Source Projects
+<ul style="line-height: 2;">
+<li><a href="https://github.com/umsungjun/react-head-safe">react-head-safe</a> - A lightweight SEO optimization library that resolves meta tag duplication issues in react-helmet-async</li>
+</ul>
+
+## 📌 Open Source Contribution
 <ul style="line-height: 2; max-height: 10rem; overflow-y: scroll;">
 <li>✅ <a href="https://github.com/luciancah/nextjs-ko/pull/158">Nextjs 한글 문서 (PR #158)</a> - <code>ExternalImage</code>의 <code>baseUrl</code> 수정으로 이미지 출력 문제 해결</li>
   <li>✅ <a href="https://github.com/toss/frontend-fundamentals/pull/207">toss/Frontend Fundamentals (PR #207)</a> - 이미지 예시를 코드 블록으로 변경, 설명 문구 개선</li>
@@ -43,7 +48,7 @@ let text = `
   <li>✅ <a href="https://github.com/mdn/translated-content/pull/29925">mdn/translated-content (PR #29925)</a> - MDN <code>Document: Response: headers property</code> 신규 번역</li>
 </ul>
 
-## 📝 Latest Posts
+## 📌 Latest Posts
 `;
 
 // rss-parser 생성
