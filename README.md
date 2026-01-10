@@ -5,7 +5,7 @@
 
 ## 📌 My Open Source Projects
 <ul style="line-height: 2;">
-<li><a href="https://github.com/umsungjun/react-head-safe">react-head-safe</a> - A lightweight SEO optimization library that resolves meta tag duplication issues in react-helmet-async</li>
+<li><a href="https://www.npmjs.com/package/react-head-safe">react-head-safe</a> - A lightweight SEO optimization library that resolves meta tag duplication issues in react-helmet-async</li>
 </ul>
 
 ## 📌 Open Source Contribution
