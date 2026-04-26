@@ -4,9 +4,25 @@
 ### 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
 ## 📌 My Open Source Projects
-<ul style="line-height: 2;">
-<li><a href="https://www.npmjs.com/package/react-head-safe">react-head-safe</a> - A lightweight SEO optimization library that resolves meta tag duplication issues in react-helmet-async</li>
-</ul>
+
+<table>
+<tr>
+<td width="80" align="center">
+  <a href="https://www.npmjs.com/package/react-head-safe">
+    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
+  </a>
+</td>
+<td>
+  <h3><a href="https://www.npmjs.com/package/react-head-safe">react-head-safe</a></h3>
+  <p>
+    <img src="https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue" alt="npm version" />
+    <img src="https://img.shields.io/npm/dt/react-head-safe?style=flat-square&color=green&label=total%20downloads" alt="total downloads" />
+    <img src="https://img.shields.io/npm/l/react-head-safe?style=flat-square" alt="license" />
+  </p>
+  <p>A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code></p>
+</td>
+</tr>
+</table>
 
 ## 📌 Open Source Contribution
 
