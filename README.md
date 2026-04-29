@@ -32,6 +32,7 @@
   <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1159">PR #1159</a> - <code>ary</code> 함수 벤치마크 추가</li>
   <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1197">PR #1197</a> - <code>identity</code> 함수 벤치마크 추가</li>
   <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1273">PR #1273</a> - <code>take</code> 함수 JSDoc 및 벤치마크 추가</li>
+  <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1695">PR #1695</a> - <code>map</code>·<code>set</code> 모듈의 누락된 <code>forEach</code>/<code>countBy</code> export 추가</li>
 </ul>
 </details>
 
