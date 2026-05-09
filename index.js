@@ -1,6 +1,90 @@
 import { writeFileSync } from "node:fs";
 import Parser from "rss-parser";
 
+async function fetchLeagueStats() {
+  const apiKey = process.env.RIOT_API_KEY;
+  const gameName = process.env.GAME_NAME;
+  const tagLine = process.env.TAG_LINE;
+
+  if (!apiKey || !gameName || !tagLine) {
+    console.warn("RIOT_API_KEY / GAME_NAME / TAG_LINE 환경변수가 없어 League 통계를 건너뜁니다.");
+    return null;
+  }
+
+  const accountRes = await fetch(
+    `https://asia.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${encodeURIComponent(gameName)}/${encodeURIComponent(tagLine)}`,
+    { headers: { "X-Riot-Token": apiKey } }
+  );
+  if (!accountRes.ok) throw new Error(`Account API ${accountRes.status}`);
+  const { puuid } = await accountRes.json();
+
+  const summonerRes = await fetch(
+    `https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}`,
+    { headers: { "X-Riot-Token": apiKey } }
+  );
+  if (!summonerRes.ok) throw new Error(`Summoner API ${summonerRes.status}`);
+  const { id: summonerId } = await summonerRes.json();
+
+  const leagueRes = await fetch(
+    `https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerId}`,
+    { headers: { "X-Riot-Token": apiKey } }
+  );
+  if (!leagueRes.ok) throw new Error(`League API ${leagueRes.status}`);
+  const entries = await leagueRes.json();
+
+  return { summonerName: `${gameName}#${tagLine}`, entries };
+}
+
+function buildLeagueSection(leagueData) {
+  const QUEUE_LABEL = { RANKED_SOLO_5x5: "솔로랭크", RANKED_FLEX_SR: "자유랭크" };
+  const TIER_KO = {
+    IRON: "Iron", BRONZE: "Bronze", SILVER: "Silver", GOLD: "Gold",
+    PLATINUM: "Platinum", EMERALD: "Emerald", DIAMOND: "Diamond",
+    MASTER: "Master", GRANDMASTER: "Grandmaster", CHALLENGER: "Challenger",
+  };
+
+  const ranked = leagueData.entries.filter(
+    (e) => e.queueType === "RANKED_SOLO_5x5" || e.queueType === "RANKED_FLEX_SR"
+  );
+
+  const emblemUrl = (tier) =>
+    `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/images/ranked-emblems/ranked-emblem-${tier.toLowerCase()}.png`;
+
+  let rows = "";
+
+  if (ranked.length === 0) {
+    rows = `
+  <tr>
+    <td align="center" width="100">
+      <img src="${emblemUrl("unranked")}" width="72" /><br/>
+      <b>Unranked</b>
+    </td>
+    <td>
+      <b>${leagueData.summonerName}</b><br/>
+      <sub>솔로랭크 · 배치 미완료</sub>
+    </td>
+  </tr>`;
+  } else {
+    for (const entry of ranked) {
+      const tier = TIER_KO[entry.tier] ?? entry.tier;
+      const queue = QUEUE_LABEL[entry.queueType] ?? entry.queueType;
+      rows += `
+  <tr>
+    <td align="center" width="100">
+      <img src="${emblemUrl(entry.tier)}" width="72" /><br/>
+      <b>${tier} ${entry.rank}</b>
+    </td>
+    <td>
+      <b>${leagueData.summonerName}</b> &nbsp;·&nbsp; ${queue}<br/>
+      <sub>${entry.leaguePoints} LP &nbsp;|&nbsp; ${entry.wins}W ${entry.losses}L</sub>
+    </td>
+  </tr>`;
+    }
+  }
+
+  return `\n\n<details>\n<summary>🎮 <b>League of Legends</b></summary>\n\n<table>${rows}\n</table>\n\n</details>`;
+}
+
 let text = `
 ## 🔥 About Me
 
@@ -136,6 +220,15 @@ const parser = new Parser({
   }
 
   text += "</ul>";
+
+  const leagueData = await fetchLeagueStats().catch((e) => {
+    console.warn("League 통계 조회 실패:", e.message);
+    return null;
+  });
+
+  if (leagueData) {
+    text += buildLeagueSection(leagueData);
+  }
 
   // README.md 파일 작성
   writeFileSync("README.md", text, "utf8", (e) => {

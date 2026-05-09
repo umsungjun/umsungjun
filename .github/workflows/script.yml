@@ -29,6 +29,10 @@ jobs:
 
       - name: Update README
         run: npm start
+        env:
+          RIOT_API_KEY: ${{ secrets.RIOT_API_KEY }}
+          GAME_NAME: ${{ secrets.GAME_NAME }}
+          TAG_LINE: ${{ secrets.TAG_LINE }}
 
       - name: Check if there are any changes
         id: verify_diff
