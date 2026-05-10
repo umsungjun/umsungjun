@@ -26,7 +26,7 @@ async function fetchLeagueStats() {
   const { id: summonerId } = await summonerRes.json();
 
   const leagueRes = await fetch(
-    `https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${summonerId}`,
+    `https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${encodeURIComponent(summonerId)}`,
     { headers: { "X-Riot-Token": apiKey } }
   );
   if (!leagueRes.ok) throw new Error(`League API ${leagueRes.status}`);
