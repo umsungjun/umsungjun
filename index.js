@@ -18,15 +18,8 @@ async function fetchLeagueStats() {
   if (!accountRes.ok) throw new Error(`Account API ${accountRes.status}`);
   const { puuid } = await accountRes.json();
 
-  const summonerRes = await fetch(
-    `https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-puuid/${puuid}`,
-    { headers: { "X-Riot-Token": apiKey } }
-  );
-  if (!summonerRes.ok) throw new Error(`Summoner API ${summonerRes.status}`);
-  const { id: summonerId } = await summonerRes.json();
-
   const leagueRes = await fetch(
-    `https://kr.api.riotgames.com/lol/league/v4/entries/by-summoner/${encodeURIComponent(summonerId)}`,
+    `https://kr.api.riotgames.com/lol/league/v4/entries/by-puuid/${puuid}`,
     { headers: { "X-Riot-Token": apiKey } }
   );
   if (!leagueRes.ok) throw new Error(`League API ${leagueRes.status}`);
