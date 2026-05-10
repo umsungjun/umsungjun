@@ -41,36 +41,38 @@ function buildLeagueSection(leagueData) {
   const emblemUrl = (tier) =>
     `https://opgg-static.akamaized.net/images/medals_new/${tier.toLowerCase()}.png`;
 
-  let rows = "";
+  let card = "";
 
   if (!solo) {
-    rows = `
-  <tr>
-    <td align="center" width="100">
-      <img src="${emblemUrl("unranked")}" width="72" /><br/>
-      <b>Unranked</b>
-    </td>
-    <td>
-      <b>${leagueData.summonerName}</b><br/>
-      <sub>솔로랭크 · 배치 미완료</sub>
-    </td>
-  </tr>`;
+    card = `
+<div align="center">
+
+<img src="${emblemUrl("unranked")}" width="130" alt="Unranked" />
+
+### Unranked
+
+**${leagueData.summonerName}** · 솔로랭크
+
+배치 미완료
+
+</div>`;
   } else {
     const tier = TIER_KO[solo.tier] ?? solo.tier;
-    rows = `
-  <tr>
-    <td align="center" width="100">
-      <img src="${emblemUrl(solo.tier)}" width="72" /><br/>
-      <b>${tier} ${solo.rank}</b>
-    </td>
-    <td>
-      <b>${leagueData.summonerName}</b> &nbsp;·&nbsp; 솔로랭크<br/>
-      <sub>${solo.leaguePoints} LP &nbsp;|&nbsp; ${solo.wins}W ${solo.losses}L</sub>
-    </td>
-  </tr>`;
+    card = `
+<div align="center">
+
+<img src="${emblemUrl(solo.tier)}" width="130" alt="${tier} ${solo.rank}" />
+
+### ${tier} ${solo.rank}
+
+**${leagueData.summonerName}** · 솔로랭크
+
+\`${solo.leaguePoints} LP\` &nbsp; \`${solo.wins}W ${solo.losses}L\`
+
+</div>`;
   }
 
-  return `\n\n<details>\n<summary><h3>🎮 League of Legends</h3></summary>\n\n<table>${rows}\n</table>\n\n</details>`;
+  return `\n\n<details open>\n<summary><h2>🎮 League of Legends</h2></summary>\n${card}\n\n</details>`;
 }
 
 let text = `
@@ -183,7 +185,7 @@ let text = `
 </ul>
 </details>
 
-## 📌 Latest Posts
+## 📌 Latest Blog Posts
 `;
 
 // rss-parser 생성
