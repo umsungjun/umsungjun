@@ -110,3 +110,31 @@
 
 ## 📌 Latest Posts
 <ul style='line-height: 2;'><li><a href=https://developer-sungjun.tistory.com/entry/YouTube-iframe-%EA%B4%80%EB%A0%A8-%EC%98%81%EC%83%81-%EC%A0%9C%EA%B1%B0-%EB%8C%80%EC%B2%B4-%EB%B0%A9%EB%B2%95 target="_blank">YouTube iframe 관련 영상 제거 대체 방법</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Autowini-WEB-%ED%86%B5%ED%95%A9-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Playwright-E2E-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EB%8F%84%EC%9E%85-Claude-Code-%EC%9E%90%EB%8F%99%ED%99%94 target="_blank">Autowini WEB 통합 프로젝트 Playwright E2E 테스트 도입 + Claude Code 자동화</a></li><li><a href=https://developer-sungjun.tistory.com/entry/React-Lazy-Suspense-%EC%82%AC%EC%9A%A9-%EC%8B%9C-%ED%8E%98%EC%9D%B4%EC%A7%80-%EC%A0%84%ED%99%98-%EA%B9%9C%EB%B9%A1%EC%9E%84%ED%9D%B0-%ED%99%94%EB%A9%B4-%EB%AC%B8%EC%A0%9C-%ED%95%B4%EA%B2%B0 target="_blank">React Lazy + Suspense 사용 시 페이지 전환 깜빡임(흰 화면) 문제 해결</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Android-WebView-%EB%94%94%EB%B2%84%EA%B9%85-chromeinspect-Pending-authentication-%EC%98%A4%EB%A5%98-%ED%95%B4%EA%B2%B0 target="_blank">Android WebView 디버깅: chrome://inspect Pending authentication 오류 해결</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Frontend-Kit-%E2%80%93-AI-%EB%AC%B8%EB%8B%B5-%EA%B8%B0%EB%8A%A5-%EB%8F%84%EC%9E%85-Gemma-3-27B target="_blank">Frontend Kit &ndash; AI 문답 기능 도입 (Gemma 3 27B)</a></li><li><a href=https://developer-sungjun.tistory.com/entry/WiniLogis-Webpack%EC%97%90%EC%84%9C-Vite%EB%A1%9C-%EB%A7%88%EC%9D%B4%EA%B7%B8%EB%A0%88%EC%9D%B4%EC%85%98 target="_blank">WiniLogis Webpack에서 Vite로 마이그레이션</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Keycloakify%EB%A5%BC-%ED%99%9C%EC%9A%A9%ED%95%9C-React-%EA%B8%B0%EB%B0%98-Keycloak-%ED%85%8C%EB%A7%88-%EA%B0%9C%EB%B0%9C-%EB%B0%8F-%EB%8B%A4%EA%B5%AD%EC%96%B4-%EC%B2%98%EB%A6%AC target="_blank">Keycloakify를 활용한 React 기반 Keycloak 테마 개발 및 다국어 처리</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Lighthouse-90%EC%A0%90%EB%8C%80%EC%9D%B8%EB%8D%B0-%EC%B2%B4%EA%B0%90%EC%9D%80-%EB%8A%90%EB%A6%B0-%EC%9D%B4%EC%9C%A0-Vercel-Region-%EC%B5%9C%EC%A0%81%ED%99%94%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%98%EA%B8%B0 target="_blank">Lighthouse 90점대인데 체감은 느린 이유? Vercel Region 최적화로 해결</a></li><li><a href=https://developer-sungjun.tistory.com/entry/Autowini-%ED%94%84%EB%A1%A0%ED%8A%B8%EC%97%94%EB%93%9C-%EB%B6%84%EB%A6%AC-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-CICD-%ED%8C%8C%EC%9D%B4%ED%94%84%EB%9D%BC%EC%9D%B8-%EA%B5%AC%EC%B6%95-Bitbucket-%EA%B8%B0%EB%B0%98-2 target="_blank">Autowini 프론트엔드 분리 프로젝트 CI/CD 파이프라인 구축 (Bitbucket 기반) 2</a></li><li><a href=https://developer-sungjun.tistory.com/entry/%ED%95%84%ED%84%B0-%EB%B3%80%EA%B2%BD-%EC%8B%9C-%EB%A9%94%EB%89%B4%EA%B0%80-%EC%A0%91%ED%9E%88%EB%8D%98-%EB%AC%B8%EC%A0%9C-TanStack-Query-placeholderData%EB%A1%9C-%ED%95%B4%EA%B2%B0%ED%95%9C-%EB%B0%A9%EB%B2%95 target="_blank">필터 변경 시 메뉴가 접히던 문제, TanStack Query placeholderData로 해결</a></li></ul>
+
+<details>
+<summary>🎮 <b>League of Legends</b></summary>
+
+<table>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/images/ranked-emblems/ranked-emblem-gold.png" width="72" /><br/>
+      <b>Gold IV</b>
+    </td>
+    <td>
+      <b>해병 엄성준#KR1</b> &nbsp;·&nbsp; 자유랭크<br/>
+      <sub>27 LP &nbsp;|&nbsp; 3W 3L</sub>
+    </td>
+  </tr>
+  <tr>
+    <td align="center" width="100">
+      <img src="https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/images/ranked-emblems/ranked-emblem-diamond.png" width="72" /><br/>
+      <b>Diamond IV</b>
+    </td>
+    <td>
+      <b>해병 엄성준#KR1</b> &nbsp;·&nbsp; 솔로랭크<br/>
+      <sub>9 LP &nbsp;|&nbsp; 72W 58L</sub>
+    </td>
+  </tr>
+</table>
+
+</details>
