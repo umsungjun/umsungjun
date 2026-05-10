@@ -36,16 +36,14 @@ function buildLeagueSection(leagueData) {
     MASTER: "Master", GRANDMASTER: "Grandmaster", CHALLENGER: "Challenger",
   };
 
-  const ranked = leagueData.entries.filter(
-    (e) => e.queueType === "RANKED_SOLO_5x5" || e.queueType === "RANKED_FLEX_SR"
-  );
+  const solo = leagueData.entries.find((e) => e.queueType === "RANKED_SOLO_5x5");
 
   const emblemUrl = (tier) =>
-    `https://raw.communitydragon.org/latest/plugins/rcp-fe-lol-shared-components/global/default/images/ranked-emblems/ranked-emblem-${tier.toLowerCase()}.png`;
+    `https://opgg-static.akamaized.net/images/medals_new/${tier.toLowerCase()}.png`;
 
   let rows = "";
 
-  if (ranked.length === 0) {
+  if (!solo) {
     rows = `
   <tr>
     <td align="center" width="100">
@@ -58,24 +56,21 @@ function buildLeagueSection(leagueData) {
     </td>
   </tr>`;
   } else {
-    for (const entry of ranked) {
-      const tier = TIER_KO[entry.tier] ?? entry.tier;
-      const queue = QUEUE_LABEL[entry.queueType] ?? entry.queueType;
-      rows += `
+    const tier = TIER_KO[solo.tier] ?? solo.tier;
+    rows = `
   <tr>
     <td align="center" width="100">
-      <img src="${emblemUrl(entry.tier)}" width="72" /><br/>
-      <b>${tier} ${entry.rank}</b>
+      <img src="${emblemUrl(solo.tier)}" width="72" /><br/>
+      <b>${tier} ${solo.rank}</b>
     </td>
     <td>
-      <b>${leagueData.summonerName}</b> &nbsp;·&nbsp; ${queue}<br/>
-      <sub>${entry.leaguePoints} LP &nbsp;|&nbsp; ${entry.wins}W ${entry.losses}L</sub>
+      <b>${leagueData.summonerName}</b> &nbsp;·&nbsp; 솔로랭크<br/>
+      <sub>${solo.leaguePoints} LP &nbsp;|&nbsp; ${solo.wins}W ${solo.losses}L</sub>
     </td>
   </tr>`;
-    }
   }
 
-  return `\n\n<details>\n<summary>🎮 <b>League of Legends</b></summary>\n\n<table>${rows}\n</table>\n\n</details>`;
+  return `\n\n<details>\n<summary><h3>🎮 League of Legends</h3></summary>\n\n<table>${rows}\n</table>\n\n</details>`;
 }
 
 let text = `
