@@ -72,36 +72,25 @@ function buildLeagueSection(leagueData) {
 </div>`;
   }
 
-  return `\n\n<details open>\n<summary><h2>🎮 League of Legends</h2></summary>\n${card}\n\n</details>`;
+  return `\n\n<details open>\n<summary><h2><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Poppy_1.jpg" height="32" align="center" alt="Noxus Poppy" /> &nbsp;League of Legends</h2></summary>\n${card}\n\n</details>`;
 }
 
 let text = `
 ## 🔥 About Me
 
-### 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
+### 안녕하세요, 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
-## 📌 My Open Source Projects
+## <img src="https://cdn.simpleicons.org/npm/CB3837" height="24" align="center" /> &nbsp;My Open Source Projects
 
-<table>
-<tr>
-<td width="80" align="center">
-  <a href="https://www.npmjs.com/package/react-head-safe">
-    <img src="https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white" />
-  </a>
-</td>
-<td>
-  <h3><a href="https://www.npmjs.com/package/react-head-safe">react-head-safe</a></h3>
-  <p>
-    <img src="https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue" alt="npm version" />
-    <img src="https://img.shields.io/npm/dt/react-head-safe?style=flat-square&color=green&label=total%20downloads" alt="total downloads" />
-    <img src="https://img.shields.io/npm/l/react-head-safe?style=flat-square" alt="license" />
-  </p>
-  <p>A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code></p>
-</td>
-</tr>
-</table>
+### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
-## 📌 Open Source Contribution
+[![npm version](https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue)](https://www.npmjs.com/package/react-head-safe)
+[![monthly downloads](https://img.shields.io/npm/dm/react-head-safe?style=flat-square&color=green&label=downloads%2Fmonth)](https://www.npmjs.com/package/react-head-safe)
+[![license](https://img.shields.io/npm/l/react-head-safe?style=flat-square)](https://www.npmjs.com/package/react-head-safe)
+
+A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
+
+## <img src="https://cdn.simpleicons.org/npm/CB3837" height="24" align="center" /> &nbsp;Open Source Contribution
 
 <details open>
 <summary><img src="https://github.com/toss.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/toss/es-toolkit">toss / es-toolkit</a></b></summary>
@@ -185,7 +174,7 @@ let text = `
 </ul>
 </details>
 
-## 📌 Latest Blog Posts
+## <img src="https://cdn.simpleicons.org/tistory/EC6B33" height="22" align="center" /> &nbsp;Latest Blog Posts
 `;
 
 // rss-parser 생성
