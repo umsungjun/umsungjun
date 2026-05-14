@@ -7,20 +7,22 @@ async function fetchLeagueStats() {
   const tagLine = process.env.TAG_LINE;
 
   if (!apiKey || !gameName || !tagLine) {
-    console.warn("RIOT_API_KEY / GAME_NAME / TAG_LINE 환경변수가 없어 League 통계를 건너뜁니다.");
+    console.warn(
+      "RIOT_API_KEY / GAME_NAME / TAG_LINE 환경변수가 없어 League 통계를 건너뜁니다.",
+    );
     return null;
   }
 
   const accountRes = await fetch(
     `https://asia.api.riotgames.com/riot/account/v1/accounts/by-riot-id/${encodeURIComponent(gameName)}/${encodeURIComponent(tagLine)}`,
-    { headers: { "X-Riot-Token": apiKey } }
+    { headers: { "X-Riot-Token": apiKey } },
   );
   if (!accountRes.ok) throw new Error(`Account API ${accountRes.status}`);
   const { puuid } = await accountRes.json();
 
   const leagueRes = await fetch(
     `https://kr.api.riotgames.com/lol/league/v4/entries/by-puuid/${puuid}`,
-    { headers: { "X-Riot-Token": apiKey } }
+    { headers: { "X-Riot-Token": apiKey } },
   );
   if (!leagueRes.ok) throw new Error(`League API ${leagueRes.status}`);
   const entries = await leagueRes.json();
@@ -29,14 +31,26 @@ async function fetchLeagueStats() {
 }
 
 function buildLeagueSection(leagueData) {
-  const QUEUE_LABEL = { RANKED_SOLO_5x5: "솔로랭크", RANKED_FLEX_SR: "자유랭크" };
+  const QUEUE_LABEL = {
+    RANKED_SOLO_5x5: "솔로랭크",
+    RANKED_FLEX_SR: "자유랭크",
+  };
   const TIER_KO = {
-    IRON: "Iron", BRONZE: "Bronze", SILVER: "Silver", GOLD: "Gold",
-    PLATINUM: "Platinum", EMERALD: "Emerald", DIAMOND: "Diamond",
-    MASTER: "Master", GRANDMASTER: "Grandmaster", CHALLENGER: "Challenger",
+    IRON: "Iron",
+    BRONZE: "Bronze",
+    SILVER: "Silver",
+    GOLD: "Gold",
+    PLATINUM: "Platinum",
+    EMERALD: "Emerald",
+    DIAMOND: "Diamond",
+    MASTER: "Master",
+    GRANDMASTER: "Grandmaster",
+    CHALLENGER: "Challenger",
   };
 
-  const solo = leagueData.entries.find((e) => e.queueType === "RANKED_SOLO_5x5");
+  const solo = leagueData.entries.find(
+    (e) => e.queueType === "RANKED_SOLO_5x5",
+  );
 
   const emblemUrl = (tier) =>
     `https://opgg-static.akamaized.net/images/medals_new/${tier.toLowerCase()}.png`;
@@ -85,7 +99,7 @@ let text = `
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
 [![npm version](https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue)](https://www.npmjs.com/package/react-head-safe)
-[![monthly downloads](https://img.shields.io/npm/dm/react-head-safe?style=flat-square&color=green&label=downloads%2Fmonth)](https://www.npmjs.com/package/react-head-safe)
+[![total downloads](https://img.shields.io/npm/dt/react-head-safe?style=flat-square&color=green&label=downloads)](https://www.npmjs.com/package/react-head-safe)
 [![license](https://img.shields.io/npm/l/react-head-safe?style=flat-square)](https://www.npmjs.com/package/react-head-safe)
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
