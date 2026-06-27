@@ -105,13 +105,13 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 
 <div align="center">
 
-<img src="https://opgg-static.akamaized.net/images/medals_new/diamond.png" width="130" alt="Diamond IV" />
+<img src="https://opgg-static.akamaized.net/images/medals_new/emerald.png" width="130" alt="Emerald I" />
 
-### Diamond IV
+### Emerald I
 
 **조슈아 반#MM1** · 솔로랭크
 
-`11 LP` &nbsp; `76W 65L`
+`75 LP` &nbsp; `76W 65L`
 
 </div>
 
