@@ -111,7 +111,7 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 
 **조슈아 반#MM1** · 솔로랭크
 
-`75 LP` &nbsp; `76W 65L`
+`94 LP` &nbsp; `77W 65L`
 
 </div>
 
