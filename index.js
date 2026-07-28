@@ -86,7 +86,7 @@ function buildLeagueSection(leagueData) {
 </div>`;
   }
 
-  return `\n\n<details open>\n<summary><h2><img src="https://ddragon.leagueoflegends.com/cdn/img/champion/tiles/Poppy_1.jpg" height="32" align="center" alt="Noxus Poppy" /> &nbsp;League of Legends</h2></summary>\n${card}\n\n</details>`;
+  return `\n\n<details open>\n<summary><h2>🎮 League of Legends</h2></summary>\n${card}\n\n</details>`;
 }
 
 let text = `
@@ -94,7 +94,7 @@ let text = `
 
 ### 안녕하세요, 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
-## <img src="https://cdn.simpleicons.org/npm/CB3837" height="24" align="center" /> &nbsp;My Open Source Projects
+## 🧑‍💻 My Open Source Projects
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
@@ -104,10 +104,10 @@ let text = `
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
 
-## <img src="https://cdn.simpleicons.org/npm/CB3837" height="24" align="center" /> &nbsp;Open Source Contribution
+## 🌍 Open Source Contribution
 
 <details open>
-<summary><img src="https://github.com/toss.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/toss/es-toolkit">toss / es-toolkit</a></b></summary>
+<summary><b><a href="https://github.com/toss/es-toolkit">toss / es-toolkit</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1159">PR #1159</a> - <code>ary</code> 함수 벤치마크 추가</li>
   <li>✨ <a href="https://github.com/toss/es-toolkit/pull/1197">PR #1197</a> - <code>identity</code> 함수 벤치마크 추가</li>
@@ -117,7 +117,7 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 </details>
 
 <details>
-<summary><img src="https://github.com/mdn.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/mdn/translated-content">mdn / translated-content</a></b></summary>
+<summary><b><a href="https://github.com/mdn/translated-content">mdn / translated-content</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/mdn/translated-content/pull/29197">PR #29197</a> - MDN <code>Right shift (>>)</code> 신규 번역</li>
   <li>✨ <a href="https://github.com/mdn/translated-content/pull/29279">PR #29279</a> - MDN <code>typeof</code> 문서를 영어 원문과 동기화</li>
@@ -134,7 +134,7 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 </details>
 
 <details>
-<summary><img src="https://github.com/toss.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/toss/frontend-fundamentals">toss / Frontend Fundamentals</a></b></summary>
+<summary><b><a href="https://github.com/toss/frontend-fundamentals">toss / Frontend Fundamentals</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/toss/frontend-fundamentals/pull/207">PR #207</a> - 이미지 예시를 코드 블록으로 변경, 설명 문구 개선</li>
   <li>✨ <a href="https://github.com/toss/frontend-fundamentals/pull/211">PR #211</a> - 이미지 경로 수정으로 렌더링 문제 해결</li>
@@ -143,35 +143,35 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 </details>
 
 <details>
-<summary><img src="https://github.com/ssi02014.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/ssi02014/react-query-tutorial">react-query-tutorial</a></b></summary>
+<summary><b><a href="https://github.com/ssi02014/react-query-tutorial">react-query-tutorial</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/ssi02014/react-query-tutorial/pull/41">PR #41</a> - 문체 변경 및 <code>cacheTime</code> 초기화 내용 추가</li>
 </ul>
 </details>
 
 <details>
-<summary><img src="https://github.com/daangn.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/daangn/stackflow">daangn / stackflow</a></b></summary>
+<summary><b><a href="https://github.com/daangn/stackflow">daangn / stackflow</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/daangn/stackflow/pull/603">PR #603</a> - <code>ActivityComponentType</code>에 <code>import type</code> 적용으로 런타임 에러 방지</li>
 </ul>
 </details>
 
 <details>
-<summary><img src="https://github.com/vercel.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/luciancah/nextjs-ko">Nextjs 한글 문서</a></b></summary>
+<summary><b><a href="https://github.com/luciancah/nextjs-ko">Nextjs 한글 문서</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/luciancah/nextjs-ko/pull/158">PR #158</a> - <code>ExternalImage</code>의 <code>baseUrl</code> 수정으로 이미지 출력 문제 해결</li>
 </ul>
 </details>
 
 <details>
-<summary><img src="https://github.com/hamsurang.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/hamsurang/react-ko-form">React Hook Form 한글 문서</a></b></summary>
+<summary><b><a href="https://github.com/hamsurang/react-ko-form">React Hook Form 한글 문서</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/hamsurang/react-ko-form/pull/100">PR #100</a> - 중복된 <code>&lt;Component {...pageProps} /&gt;</code> 제거로 중복 렌더링 문제 해결</li>
 </ul>
 </details>
 
 <details>
-<summary><img src="https://github.com/NaverPayDev.png" width="18" style="vertical-align:middle; border-radius:50%;"> &nbsp;<b><a href="https://github.com/NaverPayDev/hidash">NaverPayDev / hidash</a></b></summary>
+<summary><b><a href="https://github.com/NaverPayDev/hidash">NaverPayDev / hidash</a></b></summary>
 <ul style="line-height: 2; margin-top: 8px;">
   <li>✨ <a href="https://github.com/NaverPayDev/hidash/pull/250">PR #250</a> - README의 CI 배지 URL 수정</li>
   <li>✨ <a href="https://github.com/NaverPayDev/hidash/pull/252">PR #252</a> - <code>isArray</code> 함수 테스트 및 벤치마크 추가</li>
@@ -188,7 +188,7 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 </ul>
 </details>
 
-## <img src="https://cdn.simpleicons.org/tistory/EC6B33" height="22" align="center" /> &nbsp;Latest Blog Posts
+## 📝 Latest Blog Posts
 `;
 
 // rss-parser 생성
