@@ -30,6 +30,50 @@ async function fetchLeagueStats() {
   return { summonerName: `${gameName}#${tagLine}`, entries };
 }
 
+// 개별 shields 배지는 GitHub 모바일 앱에서 이미지마다 줄바꿈되므로 통계를 직접 조회해 배지 하나로 합친다.
+async function buildNpmBadge(pkg) {
+  // 조회 실패 시 기존 개별 배지 3개로 폴백
+  const fallback = [
+    `[![npm version](https://img.shields.io/npm/v/${pkg}?style=flat-square&color=blue)](https://www.npmjs.com/package/${pkg})`,
+    `[![total downloads](https://img.shields.io/npm/dt/${pkg}?style=flat-square&color=green&label=downloads)](https://www.npmjs.com/package/${pkg})`,
+    `[![license](https://img.shields.io/npm/l/${pkg}?style=flat-square)](https://www.npmjs.com/package/${pkg})`,
+  ].join("\n");
+
+  try {
+    const meta = await (await fetch(`https://registry.npmjs.org/${pkg}`)).json();
+    const version = meta["dist-tags"].latest;
+    const license = meta.license ?? "";
+
+    // 다운로드 API는 요청당 최대 18개월까지만 허용되어 패키지 생성일부터 기간을 나눠 합산한다.
+    let downloads = 0;
+    let start = new Date(meta.time.created);
+    const today = new Date();
+    while (start <= today) {
+      const end = new Date(start);
+      end.setMonth(end.getMonth() + 17);
+      const rangeEnd = end > today ? today : end;
+      const range = `${start.toISOString().slice(0, 10)}:${rangeEnd.toISOString().slice(0, 10)}`;
+      const res = await fetch(
+        `https://api.npmjs.org/downloads/point/${range}/${pkg}`,
+      );
+      if (res.ok) downloads += (await res.json()).downloads ?? 0;
+      start = new Date(rangeEnd);
+      start.setDate(start.getDate() + 1);
+    }
+
+    const count =
+      downloads >= 1000 ? `${(downloads / 1000).toFixed(1)}k` : `${downloads}`;
+    // shields 정적 배지는 하이픈이 구분자라서 값의 하이픈을 이스케이프(--)한 뒤 인코딩한다.
+    const message = encodeURIComponent(
+      `v${version} • ${count} downloads • ${license}`.replace(/-/g, "--"),
+    );
+    return `[![npm](https://img.shields.io/badge/npm-${message}-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/${pkg})`;
+  } catch (e) {
+    console.warn("npm 통계 조회 실패, 개별 배지로 대체:", e.message);
+    return fallback;
+  }
+}
+
 function buildLeagueSection(leagueData) {
   const QUEUE_LABEL = {
     RANKED_SOLO_5x5: "솔로랭크",
@@ -98,9 +142,7 @@ let text = `
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
-[![npm version](https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue)](https://www.npmjs.com/package/react-head-safe)
-[![total downloads](https://img.shields.io/npm/dt/react-head-safe?style=flat-square&color=green&label=downloads)](https://www.npmjs.com/package/react-head-safe)
-[![license](https://img.shields.io/npm/l/react-head-safe?style=flat-square)](https://www.npmjs.com/package/react-head-safe)
+{{NPM_BADGE}}
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
 
@@ -222,6 +264,9 @@ const parser = new Parser({
   if (leagueData) {
     text += buildLeagueSection(leagueData);
   }
+
+  // 정적 템플릿의 자리표시자를 통합 npm 배지로 치환
+  text = text.replace("{{NPM_BADGE}}", await buildNpmBadge("react-head-safe"));
 
   // README.md 파일 작성
   writeFileSync("README.md", text, "utf8", (e) => {
