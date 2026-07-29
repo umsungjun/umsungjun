@@ -7,9 +7,7 @@
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
-[![npm version](https://img.shields.io/npm/v/react-head-safe?style=flat-square&color=blue)](https://www.npmjs.com/package/react-head-safe)
-[![total downloads](https://img.shields.io/npm/dt/react-head-safe?style=flat-square&color=green&label=downloads)](https://www.npmjs.com/package/react-head-safe)
-[![license](https://img.shields.io/npm/l/react-head-safe?style=flat-square)](https://www.npmjs.com/package/react-head-safe)
+[![npm](https://img.shields.io/badge/npm-v1.11.1%20%E2%80%A2%202.3k%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-head-safe)
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
 
