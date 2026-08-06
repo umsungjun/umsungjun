@@ -142,9 +142,15 @@ let text = `
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
-{{NPM_BADGE}}
+{{NPM_BADGE_REACT_HEAD_SAFE}}
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
+
+### [react-device-check](https://www.npmjs.com/package/react-device-check)
+
+{{NPM_BADGE_REACT_DEVICE_CHECK}}
+
+Lightweight React hooks for accurate device and OS detection — zero dependencies, works in both <code>React</code> and <code>Next.js</code>
 
 ## 🌍 Open Source Contribution
 
@@ -265,8 +271,14 @@ const parser = new Parser({
     text += buildLeagueSection(leagueData);
   }
 
-  // 정적 템플릿의 자리표시자를 통합 npm 배지로 치환
-  text = text.replace("{{NPM_BADGE}}", await buildNpmBadge("react-head-safe"));
+  // 정적 템플릿의 자리표시자를 통합 npm 배지로 치환. 패키지별 조회는 서로 독립이므로 병렬로 처리한다.
+  const [headSafeBadge, deviceCheckBadge] = await Promise.all([
+    buildNpmBadge("react-head-safe"),
+    buildNpmBadge("react-device-check"),
+  ]);
+  text = text
+    .replace("{{NPM_BADGE_REACT_HEAD_SAFE}}", headSafeBadge)
+    .replace("{{NPM_BADGE_REACT_DEVICE_CHECK}}", deviceCheckBadge);
 
   // README.md 파일 작성
   writeFileSync("README.md", text, "utf8", (e) => {
