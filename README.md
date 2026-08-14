@@ -7,13 +7,13 @@
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
 
-[![npm](https://img.shields.io/badge/npm-v1.11.1%20%E2%80%A2%202.6k%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-head-safe)
+[![npm](https://img.shields.io/badge/npm-v1.11.1%20%E2%80%A2%202.7k%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-head-safe)
 
 A lightweight SEO optimization library that resolves meta tag duplication issues in <code>react-helmet-async</code>
 
 ### [react-device-check](https://www.npmjs.com/package/react-device-check)
 
-[![npm](https://img.shields.io/badge/npm-v0.1.1%20%E2%80%A2%20267%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-device-check)
+[![npm](https://img.shields.io/badge/npm-v0.1.1%20%E2%80%A2%20272%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-device-check)
 
 Lightweight React hooks for accurate device and OS detection — zero dependencies, works in both <code>React</code> and <code>Next.js</code>
 
