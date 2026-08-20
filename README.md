@@ -13,7 +13,7 @@ A lightweight SEO optimization library that resolves meta tag duplication issues
 
 ### [react-device-check](https://www.npmjs.com/package/react-device-check)
 
-[![npm](https://img.shields.io/badge/npm-v0.2.0%20%E2%80%A2%20289%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-device-check)
+[![npm](https://img.shields.io/badge/npm-v0.2.0%20%E2%80%A2%20411%20downloads%20%E2%80%A2%20MIT-CB3837?style=flat-square&logo=npm&logoColor=white)](https://www.npmjs.com/package/react-device-check)
 
 Lightweight React hooks for accurate device and OS detection — zero dependencies, works in both <code>React</code> and <code>Next.js</code>
 
