@@ -3,6 +3,15 @@
 
 ### 안녕하세요, 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
+## ✨ Managed Channels
+
+- **3초 개발 면접**
+  - YouTube: [@3초개발면접](https://www.youtube.com/@3초개발면접)
+  - Instagram: [@3sec.dev.interview](https://www.instagram.com/3sec.dev.interview/)
+- **3초 경제 상식**
+  - YouTube: [@3초경제상식](https://www.youtube.com/@3초경제상식)
+  - Instagram: [@3sec.econ.basics](https://www.instagram.com/3sec.econ.basics/)
+
 ## 🧑‍💻 My Open Source Projects
 
 ### [react-head-safe](https://www.npmjs.com/package/react-head-safe)
