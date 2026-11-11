@@ -140,6 +140,8 @@ let text = `
 
 ### 안녕하세요, 꾸준함을 강점으로 삼고 있는 프론트엔드 개발자 엄성준 입니다.
 
+🌐 [umsungjun.com](https://umsungjun.com)
+
 ## ✨ Managed Channels
 
 - **SUNGJUNN**
@@ -252,7 +254,7 @@ Lightweight React hooks for accurate device and OS detection — zero dependenci
 </ul>
 </details>
 
-## 📝 Latest Blog Posts
+## 📝 [Latest Blog Posts](https://umsungjun.com/blog)
 `;
 
 // rss-parser 생성
@@ -264,9 +266,8 @@ const parser = new Parser({
 
 (async () => {
   // 피드 목록 가져오기
-  const feed = await parser.parseURL(
-    "https://developer-sungjun.tistory.com/rss",
-  );
+  // 블로그를 umsungjun.com 으로 옮겨 티스토리 글은 비공개로 돌렸다
+  const feed = await parser.parseURL("https://umsungjun.com/rss.xml");
 
   text += "<ul style='line-height: 2;'>";
 
