@@ -8,6 +8,9 @@
 - **SUNGJUNN**
   - 게임·운동·드라이브할 때 듣는 EDM 음악 채널
   - YouTube: [@sungjunnmusic](https://www.youtube.com/@sungjunnmusic)
+- **인간서사**
+  - 한 사람의 삶을 애니메이션으로 보여주는 인물 이야기 채널
+  - YouTube: [@inganseosa](https://www.youtube.com/@inganseosa)
 - **3초 개발 면접**
   - 개발 면접 단골 질문을 3초 퀴즈로 풀어 보는 쇼츠 채널
   - YouTube: [@3초개발면접](https://www.youtube.com/@3초개발면접)
